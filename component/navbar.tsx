@@ -20,7 +20,7 @@ export default function Navbar() {
             ["Home", "/"],
             ["About", "/about"],
             ["Structure", "/structure"],
-            ["Contact", "/contact"],
+            // ["Contact", "/contact"],
           ].map(([label, link]) => (
             <Link
               key={label}
@@ -34,7 +34,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <Link
-            href="/register"
+            href="https://ppdb.smk17muncar.sch.id/"
             className="ml-4 bg-yellow-400 text-blue-900 px-5 py-2 rounded-xl shadow-md hover:bg-yellow-300 transition font-bold"
           >
             Join Us
@@ -62,11 +62,11 @@ export default function Navbar() {
           <Link href="/" className="block hover:text-yellow-500">Home</Link>
           <Link href="/about" className="block hover:text-yellow-500">About</Link>
           <Link href="/structure" className="block hover:text-yellow-500">Structure</Link>
-          <Link href="/contact" className="block hover:text-yellow-500">Contact</Link>
+          {/* <Link href="/contact" className="block hover:text-yellow-500">Contact</Link> */}
 
           {/* CTA Mobile */}
           <Link
-            href="/register"
+            href="https://ppdb.smk17muncar.sch.id/"
             className="block bg-yellow-400 text-blue-900 px-5 py-2 rounded-xl shadow-md text-center hover:bg-yellow-300 transition font-bold"
           >
             Join Us
