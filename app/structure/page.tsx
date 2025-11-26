@@ -369,6 +369,10 @@ export default function Structure() {
                                 nama="Vito"
                                 foto="/img/vito.jpg"
                             />
+                            <CardAnggota
+                                nama="Sherin"
+                                foto="/img/sherin.jpg"
+                            />
 
 
                             {/* Tambah anggota lain cukup panggil satu baris:
