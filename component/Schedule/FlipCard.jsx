@@ -1,9 +1,19 @@
-// components/Schedule/FlipCard.jsx
-export default function FlipCard({ front, back }) {
-  return (
-    <div className="w-72 h-48 perspective">
-      <div className="relative w-full h-full duration-500 transform-style preserve-3d hover:rotate-y-180 cursor-pointer">
+"use client";
+import { useState } from "react";
 
+export default function FlipCard({ front, back }) {
+  const [flipped, setFlipped] = useState(false);
+
+  return (
+    <div
+      className="w-72 h-48 perspective"
+      onClick={() => setFlipped(!flipped)}
+    >
+      <div
+        className={`relative w-full h-full duration-500 transform-style-preserve-3d cursor-pointer ${
+          flipped ? "rotate-y-180" : ""
+        }`}
+      >
         {/* Front */}
         <div className="absolute w-full h-full backface-hidden bg-blue-500 text-white rounded-xl shadow-lg flex items-center justify-center text-2xl font-bold">
           {front}
@@ -15,5 +25,5 @@ export default function FlipCard({ front, back }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
