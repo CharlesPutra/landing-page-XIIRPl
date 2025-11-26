@@ -4,41 +4,51 @@ const piketData = [
   {
     day: "Senin",
     students: [
+      "Adelia Nur Fatmawati",
       "Andre Dwi Saputra",
-      "Mohamad Yakin Nur Rohman",
-      "Sherriana Salsabila Putri Anwar"
+       "Ela Dwi Purwati",
+        "Fito Rehanes Firmansyah",
     ]
   },
   {
     day: "Selasa",
     students: [
-      "Arinda Chelsa Aulia",
-      "Sherin Angelika Sigitanarta",
-      "Adelia Nur Fatmawati"
+      "Ayob Saputra",
+     "Arinda Chelsa Aulia",
+      "Fabian Vigo Hardiansyah",
+     
     ]
   },
   {
     day: "Rabu",
     students: [
-      "Fabian Vigo Hardiansyah",
-      "Faiz Arsya Nafiza",
-      "Fito Rehanes Firmansyah"
+          "Aldo Algifari",
+       "Charles Agustian Putra",
+    "Faiz Arya Nafiza",
     ]
   },
   {
     day: "Kamis",
     students: [
-      "Ghio Pramena Ainuri",
-      "Raihan Rousyanul Fikri",
-      "Fito Surya Pratama"
+     "Fyto Surya Pratama",
+     "Raihan Rousyanul Fikri",
+     "Sherin Angelika Sigtiamarta",
     ]
   },
   {
     day: "Jumat",
     students: [
-      "Kelompok Kebersihan Mingguan",
-      "Sesi Alternatif",
-      "—"
+       "Ghio Pramana Ainuri",
+       "Andre Dwi Saputra",
+        "Sherlyana Salsabila Putri Anwar"
+    ]
+  },
+  {
+    day: "Sabtu",
+    students: [
+       "Mohamad Yakin Nur Rohman",
+       "Reganza Andre Putra Pujana",
+        "Siti Nurhazizah Sarah",
     ]
   }
 ];

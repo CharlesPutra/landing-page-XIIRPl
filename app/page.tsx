@@ -30,7 +30,7 @@ export default function Home() {
           {/* Hero Image */}
           <div className="flex-1 flex justify-center">
             <Image
-              src="/img/logo rpl.jpg"
+              src="/img/logo_rpl-removebg-preview.png"
               alt="Hero Illustration"
               width={400}        // bebas mau berapa
               height={400}

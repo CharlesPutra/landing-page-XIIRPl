@@ -61,7 +61,7 @@ export default function Structure() {
                                         <Image src="/img/pak idin.jpg" width={400} height={400} alt="Wali Kelas" className="w-full h-full object-cover" />
                                     </div>
 
-                                    <h3 className="text-2xl font-bold text-blue-700">Nama Wali Kelas</h3>
+                                    <h3 className="text-2xl font-bold text-blue-700">Samsul Muhyidin</h3>
                                     <p className="text-gray-600 mt-2">Wali Kelas XII RPL</p>
 
                                     <p className="mt-4 text-gray-700 leading-relaxed text-center">
@@ -80,7 +80,7 @@ export default function Structure() {
                                         <Image src="/img/bu retno.jpg" width={400} height={400} alt="Wali Kelas" className="w-full h-full object-cover" />
                                     </div>
 
-                                    <h3 className="text-2xl font-bold text-blue-700">Nama Wali Kelas</h3>
+                                    <h3 className="text-2xl font-bold text-blue-700">Retno Handayani,SE,MM</h3>
                                     <p className="text-gray-600 mt-2">Wali Kelas XII RPL</p>
 
                                     <p className="mt-4 text-gray-700 leading-relaxed text-center">
@@ -107,25 +107,36 @@ export default function Structure() {
                         {/* Pengurus Inti */}
                         <h2 className="text-3xl font-bold text-blue-600 mt-10 mb-6">Pengurus Inti</h2>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
                             {[
-                                { jab: "Ketua Kelas", nama: "Andre Dwi Saputra" },
-                                { jab: "Wakil Ketua", nama: "Mohamad Yakin Nur Rohman" },
-                                { jab: "Sekretaris I", nama: "Sherryna Salsabila Putri Anwar" },
-                                { jab: "Sekretaris II", nama: "Arinda Chelsa Aulia" },
-                                { jab: "Bendahara I", nama: "Sherin Angelika Sigtiamarta" },
-                                { jab: "Bendahara II", nama: "Adelia Nur Fatmawati" },
-                                { jab: "Koordinator Piket", nama: "Fabian Vigo Hardiansyah" },
+                                { jab: "Ketua Kelas", nama: "Andre Dwi Saputra", foto: "/img/andre dwi.jpg" },
+                                { jab: "Wakil Ketua", nama: "Mohamad Yakin Nur Rohman", foto: "/img/wakil.jpg" },
+                                { jab: "Sekretaris I", nama: "Sherlyana Salsabila Putri Anwar", foto: "/img/sherky.jpg" },
+                                { jab: "Sekretaris II", nama: "Arinda Chelsa Aulia", foto: "/img/arinda.jpg" },
+                                { jab: "Bendahara I", nama: "Sherin Angelika Sigtiamarta", foto: "/img/bendahara1.jpg" },
+                                { jab: "Bendahara II", nama: "Adelia Nur Fatmawati", foto: "/img/adel.jpg" },
+                                { jab: "Koordinator Piket", nama: "Fabian Vigo Hardiansyah", foto: "/img/fabian.jpg" },
                             ].map((item, i) => (
                                 <div
                                     key={i}
-                                    className="bg-white shadow-md border border-blue-100 rounded-xl p-6 hover:shadow-lg transition"
+                                    className="bg-white shadow-md border border-blue-100 rounded-xl p-6 hover:shadow-xl transition-all text-center"
                                 >
+                                    {/* Foto Pengurus */}
+                                    <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-blue-200 shadow mb-4">
+                                        <img
+                                            src={item.foto}
+                                            alt={item.nama}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+
                                     <h3 className="text-lg font-bold text-blue-700">{item.jab}</h3>
                                     <p className="text-gray-700 mt-1">{item.nama}</p>
                                 </div>
                             ))}
                         </div>
+
 
                         {/* SEKSI-SEKSI */}
                         <h2 className="text-3xl font-bold text-blue-600 mt-14 mb-6">Seksi – Seksi</h2>
@@ -141,11 +152,11 @@ export default function Structure() {
                                 <ul className="bg-white p-6 border border-blue-100 rounded-xl shadow-sm space-y-1">
                                     {[
                                         "Raihan Rousyanul Fikri",
-                                        "Refrensi Andra Putra Pujana",
-                                        "Reganz Andre Putra Pujana",
-                                        "Iyoll Saputra",
-                                        "Eldi Dwi Purwiti",
-                                        "Siti Nurhafeizah Sarah",
+                                        "Refanza Andra Putra Pujana",
+                                        "Reganza Andre Putra Pujana",
+                                        "Ayob Saputra",
+                                        "Ela Dwi Purwati",
+                                        "Siti Nurhazizah Sarah",
                                     ].map((n, i) => (
                                         <li key={i} className="text-gray-700">• {n}</li>
                                     ))}
@@ -161,8 +172,9 @@ export default function Structure() {
                                     {[
                                         "Charles Agustian Putra",
                                         "Faiz Arya Nafiza",
+                                        "Aldo Algifari",
                                         "Ghio Pramana Ainuri",
-                                        "Fitro Surya Pratama",
+                                        "Fyto Surya Pratama",
                                         "Raihan Rousyanul Fikri",
                                     ].map((n, i) => (
                                         <li key={i} className="text-gray-700">• {n}</li>
@@ -179,7 +191,7 @@ export default function Structure() {
                                     {[
                                         "Sherin Angelika Sigtiamarta",
                                         "Adelia Nur Fatmawati",
-                                        "Sherryna Salsabila Putri Anwar",
+                                        "Sherlyana Salsabila Putri Anwar",
                                         "Arinda Chelsa Aulia",
                                         "Faiz Arya Nafiza",
                                     ].map((n, i) => (
@@ -198,8 +210,8 @@ export default function Structure() {
                                         "Faiz Arya Nafiza",
                                         "Ghio Pramana Ainuri",
                                         "Fabian Vigo Hardiansyah",
-                                        "Fitro Surya Pratama",
-                                        "Fitro Tehannes Firmansyah",
+                                        "Fyto Surya Pratama",
+                                        "Fito Rehanes Firmansyah",
                                     ].map((n, i) => (
                                         <li key={i} className="text-gray-700">• {n}</li>
                                     ))}
@@ -244,109 +256,127 @@ export default function Structure() {
 
 
                 <section className="py-20 bg-blue-50">
-      <div className="max-w-6xl mx-auto text-center px-6">
-        <h2 className="text-4xl font-extrabold text-blue-600 mb-3">
-          Anggota Kelas XII RPL
-        </h2>
-        <p className="text-gray-600 mb-10">
-          Berikut adalah seluruh anggota kelas yang luar biasa!
-        </p>
+                    <div className="max-w-6xl mx-auto text-center px-6">
+                        <h2 className="text-4xl font-extrabold text-blue-600 mb-3">
+                            Anggota Kelas XII RPL
+                        </h2>
+                        <p className="text-gray-600 mb-10">
+                            Berikut adalah seluruh anggota kelas yang luar biasa!
+                        </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          <CardAnggota
-            nama="CharlesPutra"
-            posisi="Pengoding"
-            foto="/img/siswa1.jpg"
-          />
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                            <CardAnggota
+                                nama="CharlesPutra"
+                                posisi="Pengoding"
+                                foto="/img/cahrles.jpg"
+                            />
 
-          <CardAnggota
-            nama="Fabian"
-            foto="/img/fabian.jpg"
-          />
+                            <CardAnggota
+                                nama="Reganza"
+                                foto="/img/andre.jpg"
+                            />
 
-          <CardAnggota
-            nama="Faiz"
-            foto="/img/faiz.jpg"
-          />
-          <CardAnggota
-            nama="Ayub"
-            foto="/img/ayub.jpg"
-          />
-          <CardAnggota
-            nama="Sherly"
-            foto="/img/sherky.jpg"
-          />
-          <CardAnggota
-            nama="Firman"
-            foto="/img/firman.jpg"
-          />
-          <CardAnggota
-            nama="Andre Dwi"
-            foto="/img/andre dwi.jpg"
-          />
-          <CardAnggota
-            nama="Asti"
-            foto="/img/asti.jpg"
-          />
-          <CardAnggota
-            nama="Fany"
-            foto="/img/fany.jpg"
-          />
-          <CardAnggota
-            nama="Ferdi"
-            foto="/img/ferdi.jpg"
-          />
-          <CardAnggota
-            nama="Meldya"
-            foto="/img/meldya.jpg"
-          />
-          <CardAnggota
-            nama="Elsiana"
-            foto="/img/elsiana kaka.jpg"
-          />
-          <CardAnggota
-            nama="Alma"
-            foto="/img/alma.jpg"
-          />
-          <CardAnggota
-            nama="Helena"
-            foto="/img/helena.jpg"
-          />
-          <CardAnggota
-            nama="Andra"
-            foto="/img/andra.jpg"
-          />
-          <CardAnggota
-            nama="Ela"
-            foto="/img/ela.jpg"
-          />
-          <CardAnggota
-            nama="Aldo"
-            foto="/img/aldo.jpg"
-          />
-          <CardAnggota
-            nama="Farel"
-            foto="/img/farel.jpg"
-          />
-          <CardAnggota
-            nama="Fatur"
-            foto="/img/fatur.jpg"
-          />
-          <CardAnggota
-            nama="Azizah"
-            foto="/img/ajijah.jpg"
-          />
-          <CardAnggota
-            nama="Arinda"
-            foto="/img/arinda.jpg"
-          />
+                            <CardAnggota
+                                nama="Fabian"
+                                foto="/img/fabian.jpg"
+                            />
 
-          {/* Tambah anggota lain cukup panggil satu baris:
+                            <CardAnggota
+                                nama="Faiz"
+                                foto="/img/faiz.jpg"
+                            />
+                            <CardAnggota
+                                nama="Ayub"
+                                foto="/img/ayub.jpg"
+                            />
+                            <CardAnggota
+                                nama="Sherly"
+                                foto="/img/sherky.jpg"
+                            />
+                            <CardAnggota
+                                nama="Firman"
+                                foto="/img/firman.jpg"
+                            />
+                            <CardAnggota
+                                nama="Andre Dwi"
+                                foto="/img/andre dwi.jpg"
+                            />
+                            <CardAnggota
+                                nama="Asti"
+                                foto="/img/asti.jpg"
+                            />
+                            <CardAnggota
+                                nama="Fany"
+                                foto="/img/fany.jpg"
+                            />
+                            <CardAnggota
+                                nama="Ferdi"
+                                foto="/img/ferdi.jpg"
+                            />
+                            <CardAnggota
+                                nama="Meldya"
+                                foto="/img/meldya.jpg"
+                            />
+                            <CardAnggota
+                                nama="Elsiana"
+                                foto="/img/elsiana kaka.jpg"
+                            />
+                            <CardAnggota
+                                nama="Alma"
+                                foto="/img/alma.jpg"
+                            />
+                            <CardAnggota
+                                nama="Helena"
+                                foto="/img/helena.jpg"
+                            />
+                            <CardAnggota
+                                nama="Andra"
+                                foto="/img/andra.jpg"
+                            />
+                            <CardAnggota
+                                nama="Ela"
+                                foto="/img/ela.jpg"
+                            />
+                            <CardAnggota
+                                nama="Aldo"
+                                foto="/img/aldo.jpg"
+                            />
+                            <CardAnggota
+                                nama="Farel"
+                                foto="/img/farel.jpg"
+                            />
+                            <CardAnggota
+                                nama="Fatur"
+                                foto="/img/fatur.jpg"
+                            />
+                            <CardAnggota
+                                nama="Azizah"
+                                foto="/img/ajijah.jpg"
+                            />
+                            <CardAnggota
+                                nama="Arinda"
+                                foto="/img/arinda.jpg"
+                            />
+                            <CardAnggota
+                                nama="Adel"
+                                foto="/img/adel.jpg"
+                            />
+                            <CardAnggota
+                                nama="Apliana"
+                                foto="/img/apliana.jpg"
+                            />
+                            <CardAnggota
+                                nama="Vito"
+                                foto="/img/vito.jpg"
+                            />
+
+
+                            {/* Tambah anggota lain cukup panggil satu baris:
               <CardAnggota nama="..." foto="/img/...jpg" /> 
           */}
-        </div>
-      </div>
-    </section>
+                        </div>
+                    </div>
+                </section>
             </div>
             <Footer></Footer>
         </>

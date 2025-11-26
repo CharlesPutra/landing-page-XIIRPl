@@ -5,45 +5,62 @@ const scheduleData = [
     day: "Senin",
     subjects: [
       "Upacara / Apel",
-      "B. Indonesia",
-      "Matematika",
-      "Produk Kreatif dan Kewirausahaan",
-      "Bahasa Inggris"
+      "Pemrograman",
+      "Pemrograman",
+      "Pemrograman",
+      "Pemrograman",
+     
+      
     ]
   },
   {
     day: "Selasa",
     subjects: [
-      "PBO",
-      "Bimbingan Konseling",
-      "PWPB",
-      "P5"
+      "B.Inggris",
+      "B.Inggris",
+      "Pemrograman",
+      "Pemrograman",
+      "Pemrograman",
     ]
   },
   {
     day: "Rabu",
     subjects: [
-      "Basis Data",
-      "PWPB",
-      "Matematika",
-      "PBO"
+      "B.Indo",
+      "Pemrograman",
+      "Pemrograman",
+      "B.Inggris",
+      "Pemrograman"
     ]
   },
   {
     day: "Kamis",
     subjects: [
-      "B. Jawa",
+      "PKK",
+      "PKK",
+      "MTK",
       "PAI",
-      "B. Inggris",
-      "PBO"
+      "PAI",
     ]
   },
   {
     day: "Jumat",
     subjects: [
-      "Olahraga",
-      "PWPB",
-      "Basis Data"
+      "PKK",
+      "PKK",
+      "B.Indo",
+      "MTK",
+      "MTK"
+    ]
+  },
+  {
+    day: "Sabtu",
+    subjects: [
+      "Basis Data",
+      "Basis Data",
+      "PKK",
+      "PKK",
+      "PKN",
     ]
   }
 ];
