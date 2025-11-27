@@ -268,7 +268,7 @@ export default function Structure() {
                             <CardAnggota
                                 nama="CharlesPutra"
                                 posisi="Pengoding"
-                                foto="/img/cahrles.jpg"
+                                foto="/img/charles.jpg"
                             />
 
                             <CardAnggota
