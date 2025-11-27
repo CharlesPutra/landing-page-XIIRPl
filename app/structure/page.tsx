@@ -111,10 +111,10 @@ export default function Structure() {
 
                             {[
                                 { jab: "Ketua Kelas", nama: "Andre Dwi Saputra", foto: "/img/andre dwi.jpg" },
-                                { jab: "Wakil Ketua", nama: "Mohamad Yakin Nur Rohman", foto: "/img/wakil.jpg" },
+                                { jab: "Wakil Ketua", nama: "Mohamad Yakin Nur Rohman", foto: "/img/yakin.jpg" },
                                 { jab: "Sekretaris I", nama: "Sherlyana Salsabila Putri Anwar", foto: "/img/sherky.jpg" },
                                 { jab: "Sekretaris II", nama: "Arinda Chelsa Aulia", foto: "/img/arinda.jpg" },
-                                { jab: "Bendahara I", nama: "Sherin Angelika Sigtiamarta", foto: "/img/bendahara1.jpg" },
+                                { jab: "Bendahara I", nama: "Sherin Angelika Sigtiamarta", foto: "/img/sherin.jpg" },
                                 { jab: "Bendahara II", nama: "Adelia Nur Fatmawati", foto: "/img/adel.jpg" },
                                 { jab: "Koordinator Piket", nama: "Fabian Vigo Hardiansyah", foto: "/img/fabian.jpg" },
                             ].map((item, i) => (
@@ -372,6 +372,10 @@ export default function Structure() {
                             <CardAnggota
                                 nama="Sherin"
                                 foto="/img/sherin.jpg"
+                            />
+                            <CardAnggota
+                                nama="Akin"
+                                foto="/img/yakin.jpg"
                             />
 
 
